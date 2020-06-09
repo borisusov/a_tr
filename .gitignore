@@ -1,0 +1,15 @@
+/set-env.sh
+.vagrant/*
+.Vagrant/*
+Vagrant
+.git/
+*.tfstate*
+.terraform/*
+*.bak
+tmp/*
+/.vagrant
+*.tar
+*.swp
+*.log
+*.swo
+
