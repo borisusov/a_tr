@@ -1,0 +1,25 @@
+---
+- name: Catch Instances Variables
+  hosts: tomcat,jenkins 
+  become: yes
+
+  vars:
+    message1: Privet
+    message2: World
+    secret: 423462
+
+
+
+
+
+
+
+  tasks:
+    - name: Print secret variable
+      debug:
+        var: secret
+# напечатает что внутри secret
+        
+      
+    
+    
