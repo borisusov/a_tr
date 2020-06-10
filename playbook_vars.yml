@@ -19,7 +19,16 @@
       debug:
         var: secret
 # напечатает что внутри secret
-        
+    - name: print secret with message
+      debug:
+        msg: "Secretnyj parol: {{ secret }}"     
       
-    
+    - name: Print all variables
+      debug: 
+        var: message1, message2, secret
+
+    - name: print all var with message
+      debug:
+        msg: "All playbook vars: {{ message1, message2, secret }}"
+
     
