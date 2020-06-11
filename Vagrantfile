@@ -21,7 +21,7 @@ Vagrant.configure("2") do |config|
   
     end
     config.vm.provision :ansible do |ansible|
-      ansible.playbook = "playbook_vars.yml"
+      ansible.playbook = "playbook_block.yml"
     end
 
   end
